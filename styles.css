@@ -1,0 +1,127 @@
+.game-board {
+    width: 100%; /* Breite des Spielbretts */
+    height: 98vh;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr); /* 11 Spalten */
+    grid-template-rows: repeat(11, minmax(0, 1fr));  /* 11 Zeilen */ 
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid black; /* Rahmen um jede Zelle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    position: relative;
+    flex-direction: column;   
+}
+
+.cell-invisible{
+    border-color: transparent;
+}
+.cell-rotated{
+    transform: rotate(-45deg);
+    width: 150%;
+}
+
+.cell-rotated2{
+    transform: rotate(-45deg) translateY(-100%) translateX(-50%);
+    width: 150%;
+}
+
+.start {
+    background-color: green;
+
+}
+
+.corner {
+    background-color: lightgray; /* Hintergrundfarbe der Ecken */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black; /* Rahmen um jede Ecke */
+}
+
+.property-1 {
+    background-color: blue; /* Hintergrundfarbe der Grundstücke */
+}
+
+.trainstation {
+    background-color: lightblue;
+}
+
+.chance {
+    background-color: orange; /* Hintergrundfarbe der Chance-Felder */
+}
+.paytax {
+    background-color: bisque;
+}
+
+.jail {
+    background-color: lightcoral; /* Hintergrundfarbe des Gefängnisfelds */
+}
+
+.free-parking {
+    background-color: lightsalmon; /* Hintergrundfarbe des Frei Parken-Felds */
+}
+
+.cellname{
+    height: 50%;
+    width: 100%;
+    text-align: center; /* Text zentrieren */
+    overflow: hidden; /* Verhindert Überlauf */
+    word-wrap: break-word; /* Lange Wörter umbrechen */
+    word-break: break-all;
+    white-space: normal; /* Zeilenumbruch bei normalen Leerzeichen */ 
+}
+
+.figures{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Spielfiguren*/
+.square{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+.circle {
+    width: 15%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: orange;
+  }
+
+  /*Houses and Hotels*/
+
+
+.houseshotel{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.house {
+    width: 15%;
+    height: 60%;
+    background-color: red;
+    position: relative;
+    margin: auto;
+}
+
+.hotel {
+    width: 15%;
+    height: 80%;
+    background-color: cadetblue;
+    position: relative;
+    margin: auto;
+}
