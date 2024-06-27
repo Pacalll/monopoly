@@ -1,9 +1,22 @@
 .game-board {
     width: 100%; /* Breite des Spielbretts */
-    height: 98vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: repeat(11, 1fr); /* 11 Spalten */
     grid-template-rows: repeat(11, minmax(0, 1fr));  /* 11 Zeilen */ 
+}
+
+.players{
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.player{
+    background-color: blue;
+    
 }
 
 .cell {
