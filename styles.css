@@ -41,7 +41,7 @@
 }
 
 .cell-rotated2{
-    transform: rotate(-45deg) translateY(-100%) translateX(-50%);
+    transform: rotate(-45deg) translateY(-100%) translpropertyateX(-50%);
     width: 150%;
 }
 
@@ -59,9 +59,30 @@
 }
 
 .property-1 {
-    background-color: blue; /* Hintergrundfarbe der Grundstücke */
+    background-color: #85292e; /* Hintergrundfarbe der Grundstücke */
+}
+.property-2 {
+    background-color: #009aef;
+}
+.property-3 {
+    background-color: #f8196e;
+}
+.property-4 {
+    background-color: #fe7b4d;
+}
+.property-5 {
+    background-color: #fb4446;
+}
+.property-6 {
+    background-color: #d9dd31;
 }
 
+.property-7 {
+    background-color: #01a857;
+}
+.property-8 {
+    background-color: #2e149c;
+}
 .trainstation {
     background-color: lightblue;
 }
